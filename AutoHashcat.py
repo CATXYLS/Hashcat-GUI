@@ -134,7 +134,7 @@ class HashcatFinalGUI:
         tk.Entry(act, textvariable=self.hash_mode, width=10).pack(side="left", padx=5)
 
         # 2. 硬件
-        hw = tk.LabelFrame(self.root, text=" 2. 硬件选择 ", padx=5, pady=5, bg="#f0f8ff")
+        hw = tk.LabelFrame(self.root, text=" 2. 硬件选择(Beta) ", padx=5, pady=5, bg="#f0f8ff")
         hw.pack(fill="x", padx=10, pady=5)
         tk.Label(hw, text="运算设备:", bg="#f0f8ff").grid(row=0, column=0, sticky="e")
         self.combo_device = ttk.Combobox(hw, textvariable=self.selected_device, width=60, state="readonly")
@@ -534,3 +534,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = HashcatFinalGUI(root)
     root.mainloop()
+
